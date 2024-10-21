@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;  /* Dark background */
+  color: #e0e0e0;  /* Light text for contrast */
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  color: rgb(0, 153, 255); /* Web3-inspired bright blue */
+}
+
+header {
+  background: linear-gradient(90deg, rgba(0,153,255,1) 0%, rgba(255,0,224,1) 100%);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 8px rgba(0, 153, 255, 0.7); /* Glowing effect */
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 8px rgba(255, 0, 224, 0.7); /* Glowing effect */
+}
+
+section {
+  margin: 20px auto;
+  max-width: 960px;
+  padding: 20px;
+  background-color: #1e1e1e;  /* Darker section background */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Strong shadow for depth */
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  background: rgb(0, 153, 255); /* Bright Web3 blue */
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  box-shadow: 0 4px 10px rgba(0, 153, 255, 0.7); /* Subtle glowing shadow */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.services ul li:hover {
+  background: rgb(255, 0, 224); /* Bright Web3 pink */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.about {
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.about p {
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+footer {
+  background: linear-gradient(90deg, rgba(255,0,224,1) 0%, rgba(0,153,255,1) 100%);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.7); /* Shadow at the top of footer */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+  text-shadow: 1px 1px 5px rgba(255, 0, 224, 0.5); /* Soft glowing effect */
+}
+
+/* Responsive Media Query */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .services ul li {
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
